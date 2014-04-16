@@ -36,7 +36,7 @@ def main():
     # Compute the difference and Assign bits
     bits = []
     for row in xrange(img.shape[0]):
-        for col in xrange(img.shape[0]-1):
+        for col in xrange(img.shape[1]-1):
             l = img[row][col]
             r = img[row][col+1]
             bits.append('1') if l > r else bits.append('0')
